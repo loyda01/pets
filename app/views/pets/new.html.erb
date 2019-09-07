@@ -1,0 +1,7 @@
+<h1>Enter your comment below</h1>
+<%= simple_form_for @pets do |f| %>
+<%= f.input :name %>
+<%= f.input :comment %>
+<br />
+<%= f.submit 'Submit' , class: 'btn btn-outline-success' %>
+<% end %>

@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Pets</title>
+    <title>Pets 101</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
+    <header class="row">
+      <div class="col-3">
+       
+      </div>
+      <div class="col-4">
+       
+      </div>
+      
+      <div class="col-5">
+        Introduction to Dogs
+      </div> 
+
+  </header>
+  <hr />
+  <br class="clear" />
+
+<div class="container">
+  <% if flash[:error].present? %>
+    <div class="col-10 offset-1 alert alert-danger">
+      <%= flash[:error] %>
+    </div>
+  </end>
     <%= yield %>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-5 comment-section">
+           <%= link_to 'Contribute', new_pet_path %>
+     </div>
+      </div>
+    </div>
+  </div>
+
   </body>
 </html>
