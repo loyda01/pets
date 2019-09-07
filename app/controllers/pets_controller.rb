@@ -1,21 +1,26 @@
 class PetsController < ApplicationController
 def index
-  @pets = Pet.all
+  @pet = Pet.all
 end
 
   def new
-    @pets = Pet.new
+    @pet = Pet.new
   end 
 
 def create
-  Pet.create(pets_params)
+  @pet = Pet.create(pet_params)
+  if @pet.invalid?
+    flash[:error] = 'Could not save comment.'
+  end
   redirect_to root_path
 end
 
 private
 
-def pets_params
-  params.require(:pets).permit(:name, :comment)
+def pet_params
+  params.require(:pet).permit(:name, :comment)
+  
+
 end
   
 end

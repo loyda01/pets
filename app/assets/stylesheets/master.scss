@@ -1,21 +1,20 @@
 @import "bootstrap";
 
 .booyah-box {
-  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  box-shadow: 1px 1p 2px 0 #d0d0d0;
-  background: #fff;
-  border: 1px solid #ccc;
-  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  padding: 20px;
+    -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+    -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+    box-shadow: 1px 1px 2px 0 #d0d0d0;
+    border: 1px solid #ccc;
+    border-color: #979FA7;
+    margin-top: 10px;
+
   }
 h2 {
   color: #9B9695;
   font-family: 'Noto Serif', serif;
+  font-size: 20px;
   margin: 0;
-  padding: 0;
+  padding: 0;  
 }
 
 
@@ -23,10 +22,19 @@ body {
   background: image_url('fresh_snow.png');
 }
 
-.comment_section {
-font-family: 'Noto Serif', serif;
-font-style: italic;
-padding-top: 26px;
-text-align: right;
+ol {
+   color: #9B9695;
 }
 
+p {
+ color: #9B9695;
+  
+}
+
+.intro {
+font-family: 'Noto Serif', serif;
+font-style: Bold;
+font-size: 50px;
+color: #9B9695;
+  
+}
