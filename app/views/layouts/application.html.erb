@@ -29,7 +29,7 @@
 <div class="container">
   <% if flash[:error].present? %>
     <div class="col-10 offset-1 alert alert-danger">
-      <%= flash[:error] %>
+      <%= flash[:error].html_safe %>
     </div>
     <% end %>
     <%= yield %>
@@ -39,7 +39,7 @@
     <div class="container">
       <div class="row">
         <div class="col-5 comment-section">
-           <%= link_to 'Contribute your tips to our comment section below', new_pet_path %>
+           <%= link_to 'Contribute your tips to our comment section', new_pet_path %>
      
       </div>
     </div>
